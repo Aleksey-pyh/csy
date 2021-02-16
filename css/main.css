@@ -1,0 +1,221 @@
+.firstSlider__container{
+    position: relative;
+}
+.arrowContainer{
+    position: absolute;
+    width: calc(100% - 50px);
+    left: 25px;
+    top: calc(50% - 20px);
+    display: flex;
+    justify-content: space-between;
+}
+.prev,.next{
+    width: 40px;
+    height: 40px;
+    background: #C9A682;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev:before,.next:before{
+    content: '';
+    background: transparent;
+    width: 9px;
+    height: 9px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+.prev:before{
+    transform: rotate(45deg);
+    margin-left: 2px;
+}
+.next:before{
+    margin-right: 2px;
+    transform: rotate(-135deg);
+}
+.counts{
+    position: absolute;
+    left: 52px;
+    bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.count{
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    min-width: 21px;
+    text-align: end;
+}
+.firstSlider__slide{
+    position: relative;
+}
+.firstSlider__slide img{
+    max-width: 100%;
+}
+.firstH2{
+    margin-top: 150px;
+}
+.desch2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E3F43;
+    margin: -30px 0 40px;
+}
+.descList{
+    margin-top: 150px;
+    padding-left: 10px;
+}
+.descList li{
+    list-style-type: none;
+    margin: 30px 0;
+}
+.descList .title{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4A4C52;
+}
+.descList .desc{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E3F43;
+}
+.title.__first{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #3E3F43;
+}
+.desc.__first{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C9A682;
+    border-bottom:1px dashed #C9A682;
+}
+.advantages .nav-tabs .nav-item.show .nav-link,.advantages .nav-tabs .nav-link.active,.advantages .nav-tabs .nav-link{
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E3F43!important;
+}
+.advantages .nav-tabs{
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 30px;
+}
+.advantages .nav-tabs .nav-link{
+    padding-right: 0;
+    position: relative;
+    z-index: 2;
+    padding-left: 0;
+}
+.nav-tabs .nav-link.active:before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 4px);
+    height: 7px;
+    left: -2px;
+    bottom: 10px;
+    background: #C9A682;
+    z-index: -1;
+}
+.advantages .firstScreen__list li{
+    margin: 20px 0;
+}
+.advantages .firstScreen__list li span{
+    color: #3E3F43;
+}
+.advantages .firstScreen__list{
+    margin-top: 30px;
+}
+.advantages .tab-pane{
+    border: 2px solid #C9A682;
+}
+.advantages__slide img{
+    max-width: 100%;
+}
+.infrastructure{
+    padding-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+.infrastructure li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3E3F43;
+    padding-left: 80px;
+    position: relative;
+}
+.infrastructure li::before{
+    content: '';
+    top: calc(50% - 20px);
+    left: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.infrastructure .children::before{
+    background-image: url(../images/child.png);
+}
+.infrastructure .children:hover{
+    color: #b3b3b3;
+}
+.infrastructure .children:hover::before{
+    background-image: url(../images/childH.png);
+}
+.infrastructure .medicine::before{
+    background-image: url(../images/med.png);
+}
+.infrastructure .medicine:hover{
+    color: #ed4543;
+}
+.infrastructure .medicine:hover::before{
+    background-image: url(../images/medH.png);
+}
+.infrastructure .shop::before{
+    background-image: url(../images/shop.png);
+}
+.infrastructure .shop:hover{
+    color:#1e98ff;
+}
+.infrastructure .shop:hover::before{
+    background-image: url(../images/shopH.png);
+}
+.infrastructure .sport::before{
+    background-image: url(../images/sport.png);
+}
+.infrastructure .sport:hover{
+    color: #b51eff;
+}
+.infrastructure .sport:hover::before{
+    background-image: url(../images/sportH.png);
+}
+.infrastructure .cafe::before{
+    background-image: url(../images/cafe.png);
+}
+.infrastructure .cafe:hover{
+    color: #ff931e;
+}
+.infrastructure .cafe:hover::before{
+    background-image: url(../images/cafeH.png);
+}
